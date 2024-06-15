@@ -1,0 +1,60 @@
+/* ProductCategory Styling */
+.product-category {
+    padding: 20px;
+  }
+  
+  .category-banner {
+    width: 100%;
+    max-height: calc(100vh - 60px); /* Adjust for Navbar height */
+    object-fit: cover;
+  }
+  
+  .category-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .category-index p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .category-sort {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .category-sort img {
+    margin-left: 5px;
+  }
+  
+ 
+  
+  .load-more {
+    text-align: center;
+    font-size: 16px;
+    color: #ff6600;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+
+
+
+  /* Popular.css */
+
+.product-category {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

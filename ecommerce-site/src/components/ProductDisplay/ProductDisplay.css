@@ -1,0 +1,151 @@
+.prod-display {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.display-left, .display-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.prod-img-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.prod-img-list img {
+    width: 20%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.prod-img-list img:hover, .prod-img-list img:focus {
+    border-color: #ff6600;
+}
+
+.display-img {
+    text-align: center;
+}
+
+.prod-main-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.display-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-right h1 {
+    color: #383838;
+    margin-bottom: 10px;
+}
+
+.prod-right-star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.prod-right-star img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.prod-right-star p {
+    margin-left: 10px;
+    color: #a9a9a9;
+}
+
+.right-price-sec {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a9a9a9;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.prod-description {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.prod-size {
+    margin-bottom: 20px;
+}
+
+.prod-size > div {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #d1d1d1;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.prod-size > div:hover {
+    background-color: #ff6600;
+    color: #fff;
+    border-color: #ff6600;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+.prod-right-category {
+    color: #a9a9a9;
+    margin-bottom: 10px;
+}
+
+.prod-right-category span {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .prod-display {
+        flex-direction: column;
+    }
+
+    .prod-img-list img {
+        width: 24%;
+    }
+
+    .display-right {
+        order: -1; /* Show product details above images on smaller screens */
+    }
+}

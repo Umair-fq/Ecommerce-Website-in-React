@@ -1,0 +1,35 @@
+/* Popular.css */
+
+.popular {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .popular h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+  }
+  
+  .popular hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+  
+  .popular-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Responsive Design */
+  
+  @media only screen and (max-width: 768px) {
+    .popular-item {
+      justify-content: center;
+    }
+  }
+  

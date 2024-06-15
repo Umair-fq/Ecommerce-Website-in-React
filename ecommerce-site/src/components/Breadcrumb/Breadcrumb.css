@@ -1,0 +1,43 @@
+.bread-crumb {
+    font-size: 0.9em;
+    padding: 10px 20px;
+    background-color: #f5f5f5; /* Light grey background for contrast */
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.bread-crumb img {
+    width: 15px;
+    margin: 0 10px;
+    background-color: #383838; /* Dark background for the arrow */
+    padding: 2px;
+    border-radius: 2px;
+}
+
+
+.bread-crumb .arrow {
+    margin: 0 10px;
+    color: #383838; /* Color for the arrow */
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .bread-crumb {
+        font-size: 0.8em;
+        padding: 8px 15px;
+    }
+
+    .bread-crumb img {
+        width: 12px;
+        margin: 0 8px;
+    }
+
+    .bread-crumb .arrow {
+        margin: 0 8px;
+    }
+}

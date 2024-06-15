@@ -1,0 +1,59 @@
+.desc-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.desc-box-navigator {
+    display: flex;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-box, .box-fade {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-box {
+    background: #0056b3; /* Slightly darker for the active tab */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.box-fade {
+    opacity: 0.7; /* Lower opacity for inactive tab */
+}
+
+.nav-box:hover, .box-fade:hover {
+    background: #0066cc;
+    opacity: 1;
+}
+
+.box-description {
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    border-top: 1px solid #e7e7e7; /* Subtle separation from navigation */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .desc-box-navigator {
+        flex-direction: column;
+    }
+
+    .nav-box, .box-fade {
+        text-align: left;
+        padding: 15px 10px;
+    }
+
+    .box-description {
+        padding: 15px;
+    }
+}
